@@ -1,0 +1,53 @@
+@use '../../../../styles/variables.scss';
+
+.accordionItem {
+	border-bottom: 1px solid variables.$gray;
+	width: 100%;
+
+	&:last-child {
+		border: none;
+	}
+
+	&_header {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		>h3 {
+			font-size: 1.5rem;
+			font-weight: 600;
+			margin: 0;
+			padding: 0.5rem 0;
+		}
+	}
+
+	&_content {
+		transition: height 0.3s ease-in-out;
+		overflow: hidden;
+	}
+
+	&_specs {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.2rem 0.5rem;
+
+		&:nth-child(odd) {
+			background-color: variables.$gray;
+		}
+
+		&:nth-child(even) {
+			background-color: variables.$light;
+		}
+
+		>p {
+			margin: 0;
+			font-size: 1.1rem;
+
+			&:first-child {
+				font-weight: 600;
+			}
+		}
+	}
+}

@@ -1,10 +1,13 @@
-import React from "react";
-import styles from './header.module.scss';
+import React from 'react'
+
+import Logo from '../../ui/logo'
+
+import styles from './header.module.scss'
 
 const Footer = () => {
 	return (
-		<header className='container'>
-			<h1>Footer</h1>
+		<header className={`${styles.header} container`}>
+			<Logo />
 		</header>
 	)
 };

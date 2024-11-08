@@ -1,0 +1,13 @@
+@use '../../../styles/variables.scss';
+
+.logo {
+	cursor: pointer;
+
+	>h2 {
+		color: variables.$accent;
+		font-size: 2rem;
+		font-weight: 600;
+		margin: 0;
+		text-transform: uppercase;
+	}
+}

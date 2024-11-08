@@ -1,8 +1,9 @@
 @font-face {
-    font-family: 'Inter';
-    src: local('Inter'),
-        url('../resources/fonts/Inter-Regular.woff2') format('woff2'),
-        url('../resources/fonts/Inter-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Alumni';
+    src: local('Alumni'),
+        url('../resources/fonts/AlumniSans-VariableFont_wght.ttf') format('truetype'),
+        url('../resources/fonts/AlumniSansVariableFont.woff') format('woff'),
+        url('../resources/fonts/AlumniSansVariableFont.woff2') format('woff2');
+    //font-weight: 500;
     font-style: normal;
 }

@@ -1,1 +1,5 @@
-const F
+@use '../../../styles/variables';
+
+.specs {
+	background-color: variables.$light;
+}

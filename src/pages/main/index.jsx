@@ -1,18 +1,18 @@
-import React from "react";
-import {Link} from "react-router-dom";
+import React from 'react'
 
-import Layout from "../../components/layout/index.jsx";
+import Main from '../../components/blocks/main'
+import Products from '../../components/blocks/productsLinks'
+import Layout from '../../components/layout/index.jsx'
 
 import './main.scss'
 
-function Index() {
+function MainPage() {
   return (
     <Layout>
-        <h1>MUDSTER</h1>
-        <button><Link to='truck'>Truck</Link></button>
-        <button><Link to='quad'>Quad</Link></button>
+        <Main />
+        <Products />
     </Layout>
   )
 }
 
-export default Index
+export default MainPage;

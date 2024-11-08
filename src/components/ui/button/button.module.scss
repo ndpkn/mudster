@@ -1,0 +1,11 @@
+@use "../../../styles/variables.scss";
+
+.button {
+	background-color: transparent;
+	border: 2px solid variables.$accent;
+	color: variables.$light;
+	font-size: 1.5rem;
+	padding: 0.1rem 5rem;
+	text-transform: uppercase;
+	cursor: pointer;
+}

@@ -1,19 +1,26 @@
-import React from "react";
-import {Link} from "react-router-dom";
-import {useTranslation} from "react-i18next";
+import React from 'react'
+import Gallery from '../../components/blocks/gallery'
 
-import styles from './quad.module.scss'
-import Layout from "../../components/layout";
+import ProductMain from '../../components/blocks/productMain'
+import Specs from '../../components/blocks/specs'
+import Layout from '../../components/layout'
+import {QUAD_INFO} from '../../constants/data'
+import quadImage1 from '../../resources/images/image1.webp'
+import quadImage2 from '../../resources/images/image2.webp'
+import quadImage3 from '../../resources/images/image3.webp'
+import quadImage4 from '../../resources/images/image4.webp'
 
-const Quad = () => {
-	const {t} = useTranslation()
+const images = [quadImage1, quadImage2, quadImage3, quadImage4]
 
+
+const QuadPage = () => {
 	return (
 		<Layout>
-			<h1 className={styles.h1}>{t('Quad')}</h1>
-			<Link to='/'>{t('Home')}</Link>
+			<ProductMain title={QUAD_INFO.title} img={quadImage3} />
+			<Specs product={QUAD_INFO}/>
+			<Gallery images={images} />
 		</Layout>
 	)
 }
 
-export default Quad;
+export default QuadPage;

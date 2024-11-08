@@ -1,5 +1,10 @@
 {
-  "Truck": "Truck",
+  "Truck": "Truck 6x6",
   "Home": "Home",
-  "Quad": "Quad"
+  "Quad": "Quad 4x4",
+  "Subtitle": "Ne, nu, a sho?",
+  "Preorder": "Preorder",
+  "Specs": "Specs",
+  "Power": "Power",
+  "Details": "Details"
 }

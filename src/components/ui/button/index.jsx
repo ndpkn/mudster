@@ -1,9 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
+import React from 'react'
+
+import styles from './button.module.scss'
 
 const Button = ({ children }) => {
 	return (
-		<button>
+		<button className={styles.button}>
 			{children}
 		</button>
 	)

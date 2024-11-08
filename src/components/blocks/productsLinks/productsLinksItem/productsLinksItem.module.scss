@@ -1,0 +1,27 @@
+@use '../../../../styles/variables.scss';
+
+.product {
+	display: flex;
+	padding-bottom: 25px;
+	cursor: pointer;
+}
+
+.image {
+	height: 300px;
+	width: 300px;
+	object-fit: cover;
+	border: 2px solid variables.$accent;
+}
+
+.title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	>p {
+		font-size: 2rem;
+		text-decoration: none;
+		color: variables.$light;
+		margin: 0;
+	}
+}

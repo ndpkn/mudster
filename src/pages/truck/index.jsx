@@ -1,21 +1,25 @@
-import React from "react";
-import {Link} from "react-router-dom";
-import {useTranslation} from "react-i18next";
+import React from 'react'
+import Gallery from '../../components/blocks/gallery'
 
-import LanguageSelector from "../../components/ui/LanguageSelector.jsx";
+import ProductMain from '../../components/blocks/productMain'
+import Specs from '../../components/blocks/specs'
+import Layout from '../../components/layout/index.jsx'
+import {TRUCK_INFO} from '../../constants/data'
+import truckImage1 from '../../resources/images/image1.webp'
+import truckImage2 from '../../resources/images/image2.webp'
+import truckImage3 from '../../resources/images/image3.webp'
+import truckImage4 from '../../resources/images/image4.webp'
 
-import styles from './truck.module.scss'
-import Layout from "../../components/layout/index.jsx";
+const images = [truckImage1, truckImage2, truckImage3, truckImage4]
 
-const Truck = () => {
-	const {t} = useTranslation();
+const TruckPage = () => {
 	return (
 		<Layout>
-			<LanguageSelector />
-			<h1 className={styles.h1}>{t("Truck")}</h1>
-			<Link to='/'>{t("Home")}</Link>
+			<ProductMain title={TRUCK_INFO.title} img={truckImage2} />
+			<Specs product={TRUCK_INFO}/>
+			<Gallery images={images} />
 		</Layout>
 	)
 }
 
-export default Truck;
+export default TruckPage;
